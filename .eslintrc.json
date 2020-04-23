@@ -24,19 +24,25 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier":"error",
-    "import/extensions":[
+    "no-underscore-dangle": "off",
+    "prettier/prettier": "error",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "_"
+    }],
+    "import/extensions": [
       "error",
       "ignorePackages",
       {
-        "ts":"never"
+        "ts": "never"
       }
     ],
     "semi":"off"
   },
   "settings": {
-    "import/resolver":{
-      "typescript":{}
+    "import/resolver": {
+      "typescript": {}
     }
   }
 }
